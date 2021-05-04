@@ -32,12 +32,11 @@ function jugar(){
 	console.log("turno actual",turno);
 	total_tiro = tiro_1 + tiro_2;
 
-	turno = turno + 1;
-
-	if(turno==1 && total_tiro==7)
+	if((turno==1) && (total_tiro==7 || total_tiro==11))
 	{
 	alert("ganaste la partida");
 	turno = 1;
 	console.log("se reinició el turno")
 	}
+turno = turno + 1;	
 }
