@@ -1,6 +1,6 @@
 # Craps
 
-##Integrantes
+## Integrantes
 
 -Juan Camilo De Hoyos Rodelo
 -Mateo Usuga
