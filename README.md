@@ -2,5 +2,5 @@
 
 ## Integrantes
 
--Juan Camilo De Hoyos Rodelo
--Mateo Usuga
+- Juan Camilo De Hoyos Rodelo
+- Mateo Usuga
