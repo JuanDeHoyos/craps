@@ -40,14 +40,14 @@ function jugar(){
 	console.log("se reinició el turno")
 	window.location.reload();
 	}
-if((turno==1) && (total_tiro==2 || total_tiro==3 || total_tiro==12))
+    if((turno==1) && (total_tiro==2 || total_tiro==3 || total_tiro==12))
     {
         alert("perdiste la partida");
         turno = 1;
         console.log("se reinició el turno")
         window.location.reload();
     }
-      if((turno>=2) && (total_tiro==7))
+    if((turno>=2) && (total_tiro==7))
     {
         alert("perdiste la partida");
         turno = 1;
@@ -63,7 +63,7 @@ if((turno==1) && (total_tiro==2 || total_tiro==3 || total_tiro==12))
     }
     if((turno==1) && (total_tiro==4 || total_tiro==5 || total_tiro==6 || total_tiro==8 || total_tiro==9 || total_tiro==10))
     {
-        punto=total_tiro
+    punto=total_tiro
     }
 
 turno = turno + 1;	
