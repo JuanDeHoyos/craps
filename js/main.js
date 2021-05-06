@@ -43,7 +43,14 @@ if((turno==1) && (total_tiro==2 || total_tiro==3 || total_tiro==12))
         alert("perdiste la partida");
         turno = 1;
         console.log("se reinició el turno")
-      
+    }
+      if((turno>=2) && (total_tiro==7))
+    {
+        alert("perdiste la partida");
+        turno = 1;
+        console.log("se reinició el turno")
+        
+    
     }
 turno = turno + 1;	
 }
