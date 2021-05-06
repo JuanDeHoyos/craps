@@ -35,31 +35,31 @@ function jugar(){
 
 	if((turno==1) && (total_tiro==7 || total_tiro==11))
 	{
-	alert("ganaste la partida");
+    mostrarMensaje("GANASTE");
 	turno = 1;
 	console.log("se reinició el turno")
-	window.location.reload();
+
 	}
     if((turno==1) && (total_tiro==2 || total_tiro==3 || total_tiro==12))
     {
-        alert("perdiste la partida");
+        mostrarMensaje("PERDISTE");
         turno = 1;
         console.log("se reinició el turno")
-        window.location.reload();
+
     }
     if((turno>=2) && (total_tiro==7))
     {
-        alert("perdiste la partida");
+        mostrarMensaje("PERDISTE");
         turno = 1;
         console.log("se reinició el turno")
-        window.location.reload();
+
     }
     if((turno>=2) && (total_tiro==punto))
     {
-        alert("ganaste la partida");
         turno = 1;
         console.log("se reinició el turno")
-        window.location.reload();
+        mostrarMensaje("GANASTE");
+
     }
     if((turno==1) && (total_tiro==4 || total_tiro==5 || total_tiro==6 || total_tiro==8 || total_tiro==9 || total_tiro==10))
     {
@@ -67,4 +67,17 @@ function jugar(){
     }
 
 turno = turno + 1;	
+}
+
+ function mostrarMensaje(mensaje){
+mensaje_texto.innerHTML = mensaje;
+abrirVentana();
+}
+
+function abrirVentana(){
+ventana.className = "ligthbox animate__animated animate__fadeIn";
+}
+
+function cerrarVentana(){
+ventana.className = "ligthbox hidden";
 }
