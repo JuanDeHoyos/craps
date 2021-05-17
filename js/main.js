@@ -14,6 +14,7 @@ boton_tirar.addEventListener("click", jugar);
 
 dado1 = document.getElementById("dado1");
 dado2 = document.getElementById("dado2");
+cerrar.addEventListener("click",cerrarVentana);
 }
 
 function tirardado(){
@@ -70,14 +71,14 @@ turno = turno + 1;
 }
 
  function mostrarMensaje(mensaje){
-mensaje_texto.innerHTML = mensaje;
-abrirVentana();
+    mensaje_texto.innerHTML = mensaje;
+    abrirVentana();
 }
 
 function abrirVentana(){
-ventana.className = "ligthbox animate__animated animate__fadeIn";
+    ventana.className = "ligthbox animate__animated animate__fadeIn";
 }
 
 function cerrarVentana(){
-ventana.className = "ligthbox hidden";
+    ventana.className = "ligthbox hidden";
 }
