@@ -29,7 +29,7 @@ cursor:pointer;
 margin: 0 auto;
 width: 152px;
 margin-bottom: 40px;
-color:#0081a7;
+color:black;
 }​​​​​
 /* Ventana */
 #mensaje_texto{​​​​​
@@ -37,7 +37,7 @@ position: absolute;
 top: 30px;
 left: 40px;
 width: 255px;
-/*border: 1px solid black;*/
+border: 1px solid black;
 height: 140px;
 }​​​​​
 body{​​​​​
@@ -46,10 +46,10 @@ padding: 0;
 }​​​​​
 
 .show{​​​​​
-display:block;
+	display:block;
 }​​​​​
 .hidden{​​​​​
-display:none;
+	display:none;
 }​​​​​
 
 .ligthbox{​​​​​
