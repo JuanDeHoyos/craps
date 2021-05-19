@@ -30,14 +30,12 @@ cursor:pointer;
 font-size:20px;
 }
 
-#titulo{​​​​​
+#titulo{​​​
 color: white;
 text-align: center;
 font-weight: bold;
 font-size: 40px;
 font-family: helvetica;
-	-webkit-text-stroke:3px;
-	-webkit-text-stroke-color:black;
 }​​​​​
 
 #creds{
