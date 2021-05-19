@@ -14,7 +14,6 @@ boton_tirar.addEventListener("click", jugar);
 
 dado1 = document.getElementById("dado1");
 dado2 = document.getElementById("dado2");
-cerrar.addEventListener("click",cerrarVentana);
 }
 
 function tirardado(){
@@ -33,52 +32,39 @@ function jugar(){
 
 	console.log("turno actual",turno);
 	total_tiro = tiro_1 + tiro_2;
+    console.log("tiro="+total_tiro)
 
 	if((turno==1) && (total_tiro==7 || total_tiro==11))
 	{
-    mostrarMensaje("GANASTE");
-	turno = 1;
-	console.log("se reinició el turno")
-
+        turno = 1;
+        console.log("se reinició el turno")
+        alert("ganaste la partida  -  resultado:  "+total_tiro);
+        window.location.reload();
 	}
     if((turno==1) && (total_tiro==2 || total_tiro==3 || total_tiro==12))
     {
-        mostrarMensaje("PERDISTE");
         turno = 1;
         console.log("se reinició el turno")
-
+        alert("perdiste la partida  -  resultado:  "+total_tiro);
+        window.location.reload();
     }
     if((turno>=2) && (total_tiro==7))
     {
-        mostrarMensaje("PERDISTE");
         turno = 1;
         console.log("se reinició el turno")
-
+        alert("perdiste la partida  -  resultado:  "+total_tiro);
+        window.location.reload();
     }
     if((turno>=2) && (total_tiro==punto))
     {
         turno = 1;
         console.log("se reinició el turno")
-        mostrarMensaje("GANASTE");
-
+        alert("ganaste la partida  -  resultado:  "+total_tiro);
+        window.location.reload();
     }
     if((turno==1) && (total_tiro==4 || total_tiro==5 || total_tiro==6 || total_tiro==8 || total_tiro==9 || total_tiro==10))
     {
-    punto=total_tiro
+        punto=total_tiro
     }
-
-turno = turno + 1;	
-}
-
- function mostrarMensaje(mensaje){
-    mensaje_texto.innerHTML = mensaje;
-    abrirVentana();
-}
-
-function abrirVentana(){
-    ventana.className = "ligthbox animate__animated animate__fadeIn";
-}
-
-function cerrarVentana(){
-    ventana.className = "ligthbox hidden";
+        turno = turno + 1;	
 }
